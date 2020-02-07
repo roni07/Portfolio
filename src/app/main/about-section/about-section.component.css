@@ -1,0 +1,36 @@
+.about-section-content .prfl-image {
+  height: 100%;
+  width: 100%;
+}
+
+.about-section-content .right-content {
+  padding-left: 70px;
+}
+
+.about-section-content .right-content .designation {
+  padding-bottom: 40px;
+  color: #E9204F;
+}
+
+.about-section-content .right-content .right-content-left {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-section-content .right-content .right-content-right {
+  font-size: 20px;
+}
+
+.about-me {
+  margin-top: 25px;
+}
+
+.about-me .about-me-content {
+  color: #888;
+  line-height: 2.2;
+  letter-spacing: 2px;
+}
+
+.about-me .about-me-content strong {
+  color: #ffffff;
+}
