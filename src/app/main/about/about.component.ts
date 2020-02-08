@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Person} from '../../model/person.model';
+import {PersonService} from '../../service/person.service';
 
 @Component({
   selector: 'app-about-section',
@@ -10,7 +11,7 @@ export class AboutComponent implements OnInit {
 
   public person: Person = new Person();
 
-  constructor() {
+  constructor(private personService: PersonService) {
     this.person = {
       firstName: 'Mehedi',
       lastName: 'Hasan',
@@ -24,4 +25,7 @@ export class AboutComponent implements OnInit {
   ngOnInit() {
   }
 
+  /*public getPerson(): any {
+    this.personService.getPersonDetails();
+  }*/
 }
