@@ -8,51 +8,19 @@
   </div>
 
   <div class="project-content">
-    <div class="card card-content">
+    <div class="card card-content" *ngFor="let project of projectList">
       <div class="row card-body-content">
         <div class="col-5 card-body-content-left">
           <img class="left-image" src="assets/images/project/p-1.jpeg" alt="">
         </div>
         <div class="col-md-7 right">
-          <h3 class="project-content-title">Mobile and desktop app for London hostel store</h3>
-          <p class="project-content-details">Do answered bachelor occasion in of offended no concerns. Supply worthy
-            warmth branch of no ye. Voice tried
-            known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.</p>
+          <h3 class="project-content-title">{{project.projectTitle}}</h3>
+          <p class="project-content-details">{{project.projectDescription}}</p>
 
           <div class="used-stack">
             <p>Used Stack : </p>
             <div class="used-stack-list">
-              <a href="#" class="badge">HTML</a>
-              <a href="#" class="badge">CSS</a>
-              <a href="#" class="badge">Bootstrap</a>
-              <a href="#" class="badge">Material</a>
-              <a href="#" class="badge">JS</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="card card-content">
-      <div class="row card-body-content">
-        <div class="col-5 card-body-content-left">
-          <img class="left-image" src="assets/images/project/p-2.jpeg" alt="">
-        </div>
-        <div class="col-md-7 right">
-          <h3 class="project-content-title">Mobile and desktop app for London hostel store</h3>
-          <p class="project-content-details">Do answered bachelor occasion in of offended no concerns. Supply worthy
-            warmth branch of no ye. Voice tried
-            known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.</p>
-
-          <div class="used-stack">
-            <p>Used Stack : </p>
-            <div class="used-stack-list">
-              <a href="#" class="badge">HTML</a>
-              <a href="#" class="badge">CSS</a>
-              <a href="#" class="badge">Bootstrap</a>
-              <a href="#" class="badge">Material</a>
-              <a href="#" class="badge">JS</a>
+              <a href="#" class="badge" *ngFor="let tool of project.projectToolList">{{tool.projectToolName}}</a>
             </div>
           </div>
         </div>
