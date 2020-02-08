@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {ResumeComponent} from './resume.component';
 
-import { ResumeSectionComponent } from './resume-section.component';
 
 describe('ResumeSectionComponent', () => {
-  let component: ResumeSectionComponent;
-  let fixture: ComponentFixture<ResumeSectionComponent>;
+  let component: ResumeComponent;
+  let fixture: ComponentFixture<ResumeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResumeSectionComponent ]
+      declarations: [ ResumeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ResumeSectionComponent);
+    fixture = TestBed.createComponent(ResumeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

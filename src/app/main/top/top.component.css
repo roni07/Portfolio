@@ -12,9 +12,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.top-section {
+.top {
   height: 100vh;
-  background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -25,13 +24,13 @@
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #E9204F;
-  border-bottom: 2px solid #E9204F;
+  color: #3e64ff;
+  border-bottom: 2px solid #3e64ff;
 }
 
 .navbar-nav .nav-item .nav-link.active-section-link {
   color: #ffffff;
-  border-bottom: 2px solid #E9204F;
+  border-bottom: 2px solid #3e64ff;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -41,10 +40,11 @@
 }
 
 .roni-nav .brand-logo {
+  font-family: 'Poppins', 'sans-serif';
   font-size: 26px;
   font-weight: 900;
   z-index: 1;
-  color: #E9204F;
+  color: #3e64ff;
 }
 
 .a-brand {
@@ -55,7 +55,7 @@
 .a-brand::before {
   position: absolute;
   content: "";
-  background-color: #E9204F;
+  background-color: #3e64ff;
   width: 40px;
   height: 40px;
   left: -9px;
@@ -69,18 +69,18 @@
 .banner .first-text {
   font-size: 16px;
   font-weight: 800;
-  color: #E9204F;
+  color: #3e64ff;
 }
 
 .banner .second-text {
   font-size: 60px;
   font-weight: 800;
-  color: #E9204F;
+  color: #3e64ff;
 }
 
 .banner .third-text {
   font-weight: 800;
-  color: #E9204F;
+  color: #3e64ff;
   animation: banner-third-text-type-animation 3s infinite;
 }
 
@@ -110,7 +110,7 @@
   height: 100%;
   left: 0;
   top: 0;
-  background: linear-gradient(45deg, #ffffff 50%, #E9204F 50%);
+  background: linear-gradient(45deg, #ffffff 50%, #3e64ff 50%);
   transform: rotate(45deg);
   z-index: -1;
 }

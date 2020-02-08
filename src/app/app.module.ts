@@ -2,19 +2,21 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
-import {TopSectionComponent} from './main/top-section/top-section.component';
+import {TopComponent} from './main/top/top.component';
 import {FooterComponent} from './main/footer/footer.component';
-import {ResumeSectionComponent} from './main/resume-section/resume-section.component';
-import {AboutSectionComponent} from './main/about-section/about-section.component';
+import {AboutComponent} from './main/about/about.component';
+import {ProjectComponent} from './main/project/project.component';
+import {ResumeComponent} from './main/resume/resume.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TopSectionComponent,
-    AboutSectionComponent,
-    ResumeSectionComponent,
-    FooterComponent,
-  ],
+    declarations: [
+        AppComponent,
+        TopComponent,
+        AboutComponent,
+        ResumeComponent,
+        FooterComponent,
+        ProjectComponent,
+    ],
   imports: [
     BrowserModule
   ],

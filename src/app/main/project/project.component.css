@@ -1,0 +1,73 @@
+.project {
+  font-family: 'Roboto Mono', 'monospace';
+}
+
+.project .title {
+  font-family: 'Roboto Mono', 'monospace';
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+.project .project-nav .project-nav-a {
+  font-family: 'Roboto Mono', 'monospace';
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #3e64ff;
+  padding: 0;
+  margin: 30px 30px 30px 0;
+}
+
+.project-content .card-content {
+  height: 24rem;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.project-content .card-content .card-body-content {
+  height: 24rem;
+}
+
+/*.project-content .card-content .card-body-content .card-body-content-left {
+  height: 20rem;
+}*/
+
+.project-content .card-content .card-body-content .card-body-content-left .left-image {
+  height: 100%;
+  width: 100%;
+}
+
+.project-content .card-content .right {
+  color: #000;
+}
+
+.project-content .card-content .right .project-content-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 60px 0 20px 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.project-content .card-content .right .project-content-details {
+  padding-right: 60px;
+}
+
+.right .used-stack p {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.right .used-stack .used-stack-list a {
+  padding: 10px;
+  margin-right: 10px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-size: 13px;
+  background-color: #3e64ff;
+  font-weight: 700;
+}

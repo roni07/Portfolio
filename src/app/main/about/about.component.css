@@ -1,23 +1,31 @@
-.about-section-content .prfl-image {
+.about-content {
+  margin-bottom: 100px;
+}
+
+.about-content .prfl-image {
   height: 100%;
   width: 100%;
 }
 
-.about-section-content .right-content {
+.about-content .left-content {
+  background-color: #fff;
+}
+
+.about-content .right-content {
   padding-left: 70px;
 }
 
-.about-section-content .right-content .designation {
+.about-content .right-content .designation {
   padding-bottom: 40px;
-  color: #E9204F;
+  color: #3e64ff;
 }
 
-.about-section-content .right-content .right-content-left {
+.about-content .right-content .right-content-left {
   font-size: 20px;
   font-weight: 600;
 }
 
-.about-section-content .right-content .right-content-right {
+.about-content .right-content .right-content-right {
   font-size: 20px;
 }
 
