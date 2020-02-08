@@ -1,0 +1,54 @@
+.footer-section {
+  max-height: 800px;
+  background-color: #000000;
+}
+
+.footer-content {
+  padding-top:7em;
+}
+
+.footer-section h2 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 40px;
+}
+
+.footer-list-group {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-list-group li a{
+  color: rgba(255,255,255,.6);
+  text-decoration: none;
+}
+
+.footer-list-group li {
+  margin-bottom: 10px;
+}
+
+.footer-list-group li span{
+  padding-left: 7px;
+}
+
+.question-list-group {
+  list-style-type: none;
+  padding-left: 0;
+  color: rgba(255,255,255,.6);
+}
+
+.question-list-group li {
+  margin-bottom: 10px;
+}
+
+.question-list-group li span {
+  padding-left: 20px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  padding: 50px 0;
+}

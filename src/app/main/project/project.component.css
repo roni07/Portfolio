@@ -1,5 +1,5 @@
 .project {
-  font-family: 'Roboto Mono', 'monospace';
+  margin-bottom: 200px;
 }
 
 .project .title {
@@ -8,6 +8,7 @@
   letter-spacing: 2px;
   font-size: 30px;
   padding: 10px 0;
+  color: #ffffff;
 }
 
 .project .project-nav .project-nav-a {
