@@ -225,9 +225,9 @@
   font-weight: 500;
 }
 
-.skill-progress-bar .progress-div, .progress-bar-div {
+/*.skill-progress-bar .progress-div, .progress-bar-div {
   height: 14px;
-}
+}*/
 
 .skill-progress-bar .progress-bar-div {
   background-color: #3e64ff;
