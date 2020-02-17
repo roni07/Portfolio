@@ -39,53 +39,30 @@
         </div>
 
         <!-- Experience -->
-        <div class="bio-content experience-content" id="experience">
-          <h2 class="heading">Experience</h2>
-          <div class="header-content">
-            <div class="resume-icon">
-              <p class="book">
-                <i class="fas fa-book-reader book-icon"></i>
-              </p>
+        <div class="experience-content">
+          <div class="bio-content" id="experience" *ngFor="let experience of experienceList">
+            <h2 class="heading">Experience</h2>
+            <div class="header-content">
+              <div class="resume-icon">
+                <p class="book">
+                  <i class="fas fa-book-reader book-icon"></i>
+                </p>
+              </div>
+              <div class="bio-info">
+                <p class="date">{{experience.experienceTimePeriodFrom}} - {{experience.experienceTimePeriodTo}}</p>
+                <h2 class="degree position">
+                  {{experience.designation}}
+                </h2>
+                <p class="university-name company-name">
+                  {{experience.instituteName}}
+                </p>
+                <p class="about-seu">
+                  {{experience.experienceDescription}}
+                </p>
+              </div>
             </div>
-            <div class="bio-info">
-              <p class="date">2019-2020</p>
-              <h2 class="degree position">
-                Software Developer.
-              </h2>
-              <p class="university-name company-name">
-                Southeast University.
-              </p>
-              <p class="about-seu">
-                A small river named Duden flows by their place and supplies it with the necessary
-                regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-                into your mouth.
-              </p>
-            </div>
+            <hr>
           </div>
-          <hr>
-
-          <div class="header-content">
-            <div class="resume-icon">
-              <p class="book">
-                <i class="fas fa-book-reader book-icon"></i>
-              </p>
-            </div>
-            <div class="bio-info">
-              <p class="date">Demo Date</p>
-              <h2 class="degree position">
-                Demo Position
-              </h2>
-              <p class="university-name company-name">
-                Demo Company
-              </p>
-              <p class="about-seu">
-                A small river named Duden flows by their place and supplies it with the necessary
-                regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-                into your mouth.
-              </p>
-            </div>
-          </div>
-          <hr>
         </div>
 
         <!-- Skills -->
