@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Education} from '../../model/education.model';
+import {EducationService} from '../../service/education/education.service';
 
 @Component({
   selector: 'app-resume',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  public educationList: Education[] = [];
+
+  constructor(private educationService: EducationService) { }
 
   ngOnInit() {
+    this.getEducationList();
   }
 
+  public getEducationList(): void {
+    this.educationList = this.educationService.getEducationList();
+  }
 }

@@ -1,14 +1,12 @@
 <div class="container project">
   <h5 class="title">My Project</h5>
   <div class="nav project-nav">
-    <a href="#" class="nav-link pl-0 project-nav-a" *ngFor="let projectType of projectTypeList">{{projectType.projectTypeName}}</a>
-<!--    <a href="#" class="nav-link project-nav-a">WEB SITES</a>
-    <a href="#" class="nav-link project-nav-a">MOBILE APPS</a>
-    <a href="#" class="nav-link project-nav-a">LANDING PAGES</a>-->
+    <a class="nav-link pl-0 project-nav-a" (click)="getSortedProjectList('ALL')">ALL</a>
+    <a class="nav-link pl-0 project-nav-a" *ngFor="let projectType of projectTypeList" (click)="getSortedProjectList(projectType.projectTypeName)">{{projectType.projectTypeName}}</a>
   </div>
 
   <div class="project-content">
-    <div class="card card-content" *ngFor="let project of projectList">
+    <div class="card card-content" *ngFor="let project of filteredProjectList">
       <div class="row card-body-content">
         <div class="col-5 card-body-content-left">
           <img class="left-image" src="assets/images/project/p-1.jpeg" alt="">

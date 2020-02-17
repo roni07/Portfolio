@@ -36,4 +36,13 @@ export class ProjectService {
       },
     ];
   }
+
+  getSortedProjectList(projectType: string): any {
+    this.projectList.filter((project) => {
+      if (project.projectType.projectTypeName === projectType) {
+        this.projectList.push(project);
+        console.log(this.projectList);
+      }
+    });
+  }
 }

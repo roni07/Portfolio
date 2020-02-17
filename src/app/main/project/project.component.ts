@@ -14,27 +14,12 @@ export class ProjectComponent implements OnInit {
   public project: Project = new Project();
   public projectType: ProjectType = new ProjectType();
 
-  public projectList: Project[] =  [];
+  public projectList: Project[] = [];
   public projectTypeList: ProjectType[] = [];
 
+  public filteredProjectList: Project[] = [];
+
   constructor(private projectService: ProjectService, private projectTypeService: ProjectTypeService) {
-    /*this.projectList = [
-      {
-        projectId: '1', projectImageUrl: 'http://hr.com', projectTitle: 'HR Management System',
-        projectDescription: 'Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.',
-        projectType: 'WEB', projectToolList: [{projectToolName: 'HTML'}, {projectToolName: 'CSS'}, {projectToolName: 'Bootstrap'}]
-      },
-      {
-        projectId: '2', projectImageUrl: 'http://picsart.com', projectTitle: 'Pics Art Application',
-        projectDescription: 'Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.',
-        projectType: 'ANDROID', projectToolList: [{projectToolName: 'Java'}, {projectToolName: 'XML'}]
-      },
-      {
-        projectId: '3', projectImageUrl: 'http://calculator.com', projectTitle: 'Scientific Calculator',
-        projectDescription: 'Do answered bachelor occasion in of offended no concerns. Supply worthy warmth branch of no ye. Voice tried known to as my to. Though wished merits or be. Alone visit use these smart rooms ham.',
-        projectType: 'DESKTOP', projectToolList: [{projectToolName: 'Java'}, {projectToolName: 'Scene Builder'}]
-      },
-    ];*/
   }
 
   ngOnInit() {
@@ -43,10 +28,19 @@ export class ProjectComponent implements OnInit {
   }
 
   public getProjectList(): void {
-    this.projectList = this.projectService.getProjectList();
+    this.filteredProjectList = this.projectService.getProjectList();
   }
 
   public getProjectTypeList(): void {
     this.projectTypeList = this.projectTypeService.getProjectTypeList();
+  }
+
+  public getSortedProjectList(type: string): void {
+    this.projectList = this.projectService.getProjectList();
+    if (type === 'ALL') {
+      this.filteredProjectList = this.projectList;
+    } else {
+      this.filteredProjectList = this.projectList.filter(project => project.projectType.projectTypeName === type);
+    }
   }
 }
